@@ -1,0 +1,9 @@
+<div class="card mb-3">
+  <img src="https://plus.unsplash.com/premium_photo-1684175656320-5c3f701c082c" class="card-img-top img-thumbnail rounded" alt="..." width="10%" height="10%">
+  <div class="card-body">
+    <h5 class="card-title"><%= @flat.name %>e</h5>
+    <p class="card-text"><%= @flat.description %></p>
+    <p class="card-text"><small class="text-body-secondary"><%= @flat.price_per_night %>  <i class="fa-solid fa-euro-sign"></i> /night for <i class="fa-solid fa-people-line"></i> <%= @flat.number_of_guests %></small></p>
+  </div>
+</div>
+<%= link_to " back", flats_path, class:"fa-regular fa-circle-left link-underline link-underline-opacity-0 mx-1 my-3" %>

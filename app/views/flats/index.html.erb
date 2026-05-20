@@ -1,0 +1,8 @@
+<%= render "shared/navbar", name:"Simple Airbnb" %>
+<div class="content my-3 d-flex gap-3 justify-content-center">
+
+<% @flats.each do |flat| %>
+<%= render "shared/card", flat:flat %>
+<% end %>
+
+</div>
